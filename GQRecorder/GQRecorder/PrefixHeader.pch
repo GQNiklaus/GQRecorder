@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  GQRecorder
+//
+//  Created by guoqi on 16/4/1.
+//  Copyright © 2016年 guoqi. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <AVFoundation/AVFoundation.h>
+#import <AssetsLibrary/AssetsLibrary.h>
+
+#endif /* PrefixHeader_pch */

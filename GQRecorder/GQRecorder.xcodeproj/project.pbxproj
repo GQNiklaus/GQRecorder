@@ -1,0 +1,632 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		191D2D891CBB83DE003405F0 /* NSArray+GQAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 191D2D881CBB83DE003405F0 /* NSArray+GQAdditions.m */; };
+		194324E41CB6534B00C7C941 /* GQCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 194324E31CB6534B00C7C941 /* GQCamera.m */; };
+		19F0D4A01CB743AD00877C4E /* GQTouchDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F0D49F1CB743AD00877C4E /* GQTouchDetector.m */; };
+		19F0D4A41CB7A13E00877C4E /* GQAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F0D4A31CB7A13E00877C4E /* GQAudioTool.m */; };
+		3458FBF81CB3A24A002BA727 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3458FBF41CB3A24A002BA727 /* AppDelegate.m */; };
+		3458FBF91CB3A24A002BA727 /* GQRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3458FBF71CB3A24A002BA727 /* GQRecorder.m */; };
+		34881DA81CAE3ADC008D610C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34881DA71CAE3ADC008D610C /* main.m */; };
+		34881DB11CAE3ADC008D610C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34881DAF1CAE3ADC008D610C /* Main.storyboard */; };
+		34881DB31CAE3ADC008D610C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34881DB21CAE3ADC008D610C /* Assets.xcassets */; };
+		34881DB61CAE3ADC008D610C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34881DB41CAE3ADC008D610C /* LaunchScreen.storyboard */; };
+		34881DC11CAE3ADC008D610C /* GQRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34881DC01CAE3ADC008D610C /* GQRecorderTests.m */; };
+		34881DCC1CAE3ADC008D610C /* GQRecorderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34881DCB1CAE3ADC008D610C /* GQRecorderUITests.m */; };
+		34881DDB1CAE4A64008D610C /* GQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34881DDA1CAE4A64008D610C /* GQViewController.m */; };
+		34F8F5241CB3B8D6001E1BB5 /* GQVideoEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F8F5231CB3B8D6001E1BB5 /* GQVideoEncoder.m */; };
+		34F8F5271CB3B8E6001E1BB5 /* GQAudioEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F8F5261CB3B8E6001E1BB5 /* GQAudioEncoder.m */; };
+		34F8F52A1CB3B8F7001E1BB5 /* GQDataEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F8F5291CB3B8F7001E1BB5 /* GQDataEncoder.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		34881DBD1CAE3ADC008D610C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34881D9B1CAE3ADC008D610C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34881DA21CAE3ADC008D610C;
+			remoteInfo = GQRecorder;
+		};
+		34881DC81CAE3ADC008D610C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34881D9B1CAE3ADC008D610C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 34881DA21CAE3ADC008D610C;
+			remoteInfo = GQRecorder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		191D2D871CBB83DE003405F0 /* NSArray+GQAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+GQAdditions.h"; sourceTree = "<group>"; };
+		191D2D881CBB83DE003405F0 /* NSArray+GQAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+GQAdditions.m"; sourceTree = "<group>"; };
+		194324E21CB6534B00C7C941 /* GQCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQCamera.h; sourceTree = "<group>"; };
+		194324E31CB6534B00C7C941 /* GQCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQCamera.m; sourceTree = "<group>"; };
+		19F0D49E1CB743AD00877C4E /* GQTouchDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQTouchDetector.h; sourceTree = "<group>"; };
+		19F0D49F1CB743AD00877C4E /* GQTouchDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQTouchDetector.m; sourceTree = "<group>"; };
+		19F0D4A21CB7A13E00877C4E /* GQAudioTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQAudioTool.h; sourceTree = "<group>"; };
+		19F0D4A31CB7A13E00877C4E /* GQAudioTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQAudioTool.m; sourceTree = "<group>"; };
+		3458FBF31CB3A24A002BA727 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3458FBF41CB3A24A002BA727 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3458FBF61CB3A24A002BA727 /* GQRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQRecorder.h; sourceTree = "<group>"; };
+		3458FBF71CB3A24A002BA727 /* GQRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQRecorder.m; sourceTree = "<group>"; };
+		34881DA31CAE3ADC008D610C /* GQRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GQRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34881DA71CAE3ADC008D610C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		34881DB01CAE3ADC008D610C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		34881DB21CAE3ADC008D610C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34881DB51CAE3ADC008D610C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		34881DB71CAE3ADC008D610C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34881DBC1CAE3ADC008D610C /* GQRecorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GQRecorderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34881DC01CAE3ADC008D610C /* GQRecorderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GQRecorderTests.m; sourceTree = "<group>"; };
+		34881DC21CAE3ADC008D610C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34881DC71CAE3ADC008D610C /* GQRecorderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GQRecorderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		34881DCB1CAE3ADC008D610C /* GQRecorderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GQRecorderUITests.m; sourceTree = "<group>"; };
+		34881DCD1CAE3ADC008D610C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34881DD91CAE4A64008D610C /* GQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQViewController.h; sourceTree = "<group>"; };
+		34881DDA1CAE4A64008D610C /* GQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQViewController.m; sourceTree = "<group>"; };
+		34881DDC1CAE4B80008D610C /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		34F8F5221CB3B8D6001E1BB5 /* GQVideoEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQVideoEncoder.h; sourceTree = "<group>"; };
+		34F8F5231CB3B8D6001E1BB5 /* GQVideoEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQVideoEncoder.m; sourceTree = "<group>"; };
+		34F8F5251CB3B8E6001E1BB5 /* GQAudioEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQAudioEncoder.h; sourceTree = "<group>"; };
+		34F8F5261CB3B8E6001E1BB5 /* GQAudioEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQAudioEncoder.m; sourceTree = "<group>"; };
+		34F8F5281CB3B8F7001E1BB5 /* GQDataEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQDataEncoder.h; sourceTree = "<group>"; };
+		34F8F5291CB3B8F7001E1BB5 /* GQDataEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQDataEncoder.m; sourceTree = "<group>"; };
+		34F8F52B1CB3B960001E1BB5 /* GQRecorder_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQRecorder_internal.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		34881DA01CAE3ADC008D610C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34881DB91CAE3ADC008D610C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34881DC41CAE3ADC008D610C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		191D2D861CBB83BC003405F0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				191D2D871CBB83DE003405F0 /* NSArray+GQAdditions.h */,
+				191D2D881CBB83DE003405F0 /* NSArray+GQAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		19F0D4A11CB7A0E900877C4E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				19F0D4A21CB7A13E00877C4E /* GQAudioTool.h */,
+				19F0D4A31CB7A13E00877C4E /* GQAudioTool.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		3458FBEB1CB3A022002BA727 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				191D2D861CBB83BC003405F0 /* Categories */,
+				19F0D4A11CB7A0E900877C4E /* Tools */,
+				34F8F5211CB3B88A001E1BB5 /* Helper */,
+				3458FBF21CB3A24A002BA727 /* Others */,
+				3458FBF51CB3A24A002BA727 /* Recorder */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3458FBF21CB3A24A002BA727 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				3458FBF31CB3A24A002BA727 /* AppDelegate.h */,
+				3458FBF41CB3A24A002BA727 /* AppDelegate.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		3458FBF51CB3A24A002BA727 /* Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				3458FBF61CB3A24A002BA727 /* GQRecorder.h */,
+				3458FBF71CB3A24A002BA727 /* GQRecorder.m */,
+				194324E21CB6534B00C7C941 /* GQCamera.h */,
+				194324E31CB6534B00C7C941 /* GQCamera.m */,
+				34F8F52B1CB3B960001E1BB5 /* GQRecorder_internal.h */,
+			);
+			path = Recorder;
+			sourceTree = "<group>";
+		};
+		34881D9A1CAE3ADC008D610C = {
+			isa = PBXGroup;
+			children = (
+				34881DA51CAE3ADC008D610C /* GQRecorder */,
+				34881DBF1CAE3ADC008D610C /* GQRecorderTests */,
+				34881DCA1CAE3ADC008D610C /* GQRecorderUITests */,
+				34881DA41CAE3ADC008D610C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		34881DA41CAE3ADC008D610C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34881DA31CAE3ADC008D610C /* GQRecorder.app */,
+				34881DBC1CAE3ADC008D610C /* GQRecorderTests.xctest */,
+				34881DC71CAE3ADC008D610C /* GQRecorderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34881DA51CAE3ADC008D610C /* GQRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				3458FBEB1CB3A022002BA727 /* Classes */,
+				34881DAF1CAE3ADC008D610C /* Main.storyboard */,
+				34881DD91CAE4A64008D610C /* GQViewController.h */,
+				34881DDA1CAE4A64008D610C /* GQViewController.m */,
+				34881DB21CAE3ADC008D610C /* Assets.xcassets */,
+				34881DB41CAE3ADC008D610C /* LaunchScreen.storyboard */,
+				34881DB71CAE3ADC008D610C /* Info.plist */,
+				34881DA61CAE3ADC008D610C /* Supporting Files */,
+			);
+			path = GQRecorder;
+			sourceTree = "<group>";
+		};
+		34881DA61CAE3ADC008D610C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				34881DA71CAE3ADC008D610C /* main.m */,
+				34881DDC1CAE4B80008D610C /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		34881DBF1CAE3ADC008D610C /* GQRecorderTests */ = {
+			isa = PBXGroup;
+			children = (
+				34881DC01CAE3ADC008D610C /* GQRecorderTests.m */,
+				34881DC21CAE3ADC008D610C /* Info.plist */,
+			);
+			path = GQRecorderTests;
+			sourceTree = "<group>";
+		};
+		34881DCA1CAE3ADC008D610C /* GQRecorderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				34881DCB1CAE3ADC008D610C /* GQRecorderUITests.m */,
+				34881DCD1CAE3ADC008D610C /* Info.plist */,
+			);
+			path = GQRecorderUITests;
+			sourceTree = "<group>";
+		};
+		34F8F5211CB3B88A001E1BB5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				34F8F5221CB3B8D6001E1BB5 /* GQVideoEncoder.h */,
+				34F8F5231CB3B8D6001E1BB5 /* GQVideoEncoder.m */,
+				34F8F5251CB3B8E6001E1BB5 /* GQAudioEncoder.h */,
+				34F8F5261CB3B8E6001E1BB5 /* GQAudioEncoder.m */,
+				34F8F5281CB3B8F7001E1BB5 /* GQDataEncoder.h */,
+				34F8F5291CB3B8F7001E1BB5 /* GQDataEncoder.m */,
+				19F0D49E1CB743AD00877C4E /* GQTouchDetector.h */,
+				19F0D49F1CB743AD00877C4E /* GQTouchDetector.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		34881DA21CAE3ADC008D610C /* GQRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34881DD01CAE3ADC008D610C /* Build configuration list for PBXNativeTarget "GQRecorder" */;
+			buildPhases = (
+				34881D9F1CAE3ADC008D610C /* Sources */,
+				34881DA01CAE3ADC008D610C /* Frameworks */,
+				34881DA11CAE3ADC008D610C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GQRecorder;
+			productName = GQRecorder;
+			productReference = 34881DA31CAE3ADC008D610C /* GQRecorder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		34881DBB1CAE3ADC008D610C /* GQRecorderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34881DD31CAE3ADC008D610C /* Build configuration list for PBXNativeTarget "GQRecorderTests" */;
+			buildPhases = (
+				34881DB81CAE3ADC008D610C /* Sources */,
+				34881DB91CAE3ADC008D610C /* Frameworks */,
+				34881DBA1CAE3ADC008D610C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34881DBE1CAE3ADC008D610C /* PBXTargetDependency */,
+			);
+			name = GQRecorderTests;
+			productName = GQRecorderTests;
+			productReference = 34881DBC1CAE3ADC008D610C /* GQRecorderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		34881DC61CAE3ADC008D610C /* GQRecorderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34881DD61CAE3ADC008D610C /* Build configuration list for PBXNativeTarget "GQRecorderUITests" */;
+			buildPhases = (
+				34881DC31CAE3ADC008D610C /* Sources */,
+				34881DC41CAE3ADC008D610C /* Frameworks */,
+				34881DC51CAE3ADC008D610C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				34881DC91CAE3ADC008D610C /* PBXTargetDependency */,
+			);
+			name = GQRecorderUITests;
+			productName = GQRecorderUITests;
+			productReference = 34881DC71CAE3ADC008D610C /* GQRecorderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		34881D9B1CAE3ADC008D610C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = guoqi;
+				TargetAttributes = {
+					34881DA21CAE3ADC008D610C = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					34881DBB1CAE3ADC008D610C = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 34881DA21CAE3ADC008D610C;
+					};
+					34881DC61CAE3ADC008D610C = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 34881DA21CAE3ADC008D610C;
+					};
+				};
+			};
+			buildConfigurationList = 34881D9E1CAE3ADC008D610C /* Build configuration list for PBXProject "GQRecorder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 34881D9A1CAE3ADC008D610C;
+			productRefGroup = 34881DA41CAE3ADC008D610C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				34881DA21CAE3ADC008D610C /* GQRecorder */,
+				34881DBB1CAE3ADC008D610C /* GQRecorderTests */,
+				34881DC61CAE3ADC008D610C /* GQRecorderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		34881DA11CAE3ADC008D610C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34881DB61CAE3ADC008D610C /* LaunchScreen.storyboard in Resources */,
+				34881DB31CAE3ADC008D610C /* Assets.xcassets in Resources */,
+				34881DB11CAE3ADC008D610C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34881DBA1CAE3ADC008D610C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34881DC51CAE3ADC008D610C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34881D9F1CAE3ADC008D610C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34F8F52A1CB3B8F7001E1BB5 /* GQDataEncoder.m in Sources */,
+				34881DDB1CAE4A64008D610C /* GQViewController.m in Sources */,
+				34F8F5241CB3B8D6001E1BB5 /* GQVideoEncoder.m in Sources */,
+				3458FBF91CB3A24A002BA727 /* GQRecorder.m in Sources */,
+				34881DA81CAE3ADC008D610C /* main.m in Sources */,
+				19F0D4A01CB743AD00877C4E /* GQTouchDetector.m in Sources */,
+				191D2D891CBB83DE003405F0 /* NSArray+GQAdditions.m in Sources */,
+				19F0D4A41CB7A13E00877C4E /* GQAudioTool.m in Sources */,
+				3458FBF81CB3A24A002BA727 /* AppDelegate.m in Sources */,
+				194324E41CB6534B00C7C941 /* GQCamera.m in Sources */,
+				34F8F5271CB3B8E6001E1BB5 /* GQAudioEncoder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34881DB81CAE3ADC008D610C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34881DC11CAE3ADC008D610C /* GQRecorderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34881DC31CAE3ADC008D610C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34881DCC1CAE3ADC008D610C /* GQRecorderUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34881DBE1CAE3ADC008D610C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34881DA21CAE3ADC008D610C /* GQRecorder */;
+			targetProxy = 34881DBD1CAE3ADC008D610C /* PBXContainerItemProxy */;
+		};
+		34881DC91CAE3ADC008D610C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 34881DA21CAE3ADC008D610C /* GQRecorder */;
+			targetProxy = 34881DC81CAE3ADC008D610C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		34881DAF1CAE3ADC008D610C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34881DB01CAE3ADC008D610C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		34881DB41CAE3ADC008D610C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				34881DB51CAE3ADC008D610C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		34881DCE1CAE3ADC008D610C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34881DCF1CAE3ADC008D610C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		34881DD11CAE3ADC008D610C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GQRecorder/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = GQRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderMajBuu.GQRecorder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		34881DD21CAE3ADC008D610C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = GQRecorder/PrefixHeader.pch;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = GQRecorder/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderMajBuu.GQRecorder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		34881DD41CAE3ADC008D610C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GQRecorderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderMajBuu.GQRecorderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GQRecorder.app/GQRecorder";
+			};
+			name = Debug;
+		};
+		34881DD51CAE3ADC008D610C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GQRecorderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderMajBuu.GQRecorderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GQRecorder.app/GQRecorder";
+			};
+			name = Release;
+		};
+		34881DD71CAE3ADC008D610C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GQRecorderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderMajBuu.GQRecorderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GQRecorder;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		34881DD81CAE3ADC008D610C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GQRecorderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.coderMajBuu.GQRecorderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GQRecorder;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34881D9E1CAE3ADC008D610C /* Build configuration list for PBXProject "GQRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34881DCE1CAE3ADC008D610C /* Debug */,
+				34881DCF1CAE3ADC008D610C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34881DD01CAE3ADC008D610C /* Build configuration list for PBXNativeTarget "GQRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34881DD11CAE3ADC008D610C /* Debug */,
+				34881DD21CAE3ADC008D610C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34881DD31CAE3ADC008D610C /* Build configuration list for PBXNativeTarget "GQRecorderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34881DD41CAE3ADC008D610C /* Debug */,
+				34881DD51CAE3ADC008D610C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34881DD61CAE3ADC008D610C /* Build configuration list for PBXNativeTarget "GQRecorderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34881DD71CAE3ADC008D610C /* Debug */,
+				34881DD81CAE3ADC008D610C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 34881D9B1CAE3ADC008D610C /* Project object */;
+}
