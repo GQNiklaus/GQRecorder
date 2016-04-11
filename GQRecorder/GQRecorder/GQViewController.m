@@ -9,11 +9,14 @@
 #import "GQViewController.h"
 #import "GQTouchDetector.h"
 #import "GQCamera.h"
+#import "GQAudioTool.h"
 
 
 @interface GQViewController () <GQCameraDelegate>
 /** 相机 */
 @property (nonatomic, strong) GQCamera *camera;
+/** 播放器 */
+@property (nonatomic, strong) AVPlayer *player;
 
 @end
 
@@ -39,6 +42,9 @@
     _camera.enableSound = NO;
     self.camera.previewVideoGravity = AVLayerVideoGravityResizeAspectFill;
     self.camera.previewView = self.previewView;
+    
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [GQAudioTool overrideCategoryMixWithOthers];
     
     [self.camera initialize:^(NSError *audioError, NSError *videoError) {
         

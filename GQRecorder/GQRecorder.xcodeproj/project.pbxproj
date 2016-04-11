@@ -11,6 +11,9 @@
 		194324E41CB6534B00C7C941 /* GQCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 194324E31CB6534B00C7C941 /* GQCamera.m */; };
 		19F0D4A01CB743AD00877C4E /* GQTouchDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F0D49F1CB743AD00877C4E /* GQTouchDetector.m */; };
 		19F0D4A41CB7A13E00877C4E /* GQAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F0D4A31CB7A13E00877C4E /* GQAudioTool.m */; };
+		19F6C88B1CBB8D0E00EF546C /* GQPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F6C88A1CBB8D0E00EF546C /* GQPlayer.m */; };
+		19F6C88E1CBB8EE300EF546C /* GQVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F6C88D1CBB8EE300EF546C /* GQVideoPlayerView.m */; };
+		19F6C8911CBB917500EF546C /* GQVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 19F6C8901CBB917500EF546C /* GQVideoPlayerViewController.m */; };
 		3458FBF81CB3A24A002BA727 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3458FBF41CB3A24A002BA727 /* AppDelegate.m */; };
 		3458FBF91CB3A24A002BA727 /* GQRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3458FBF71CB3A24A002BA727 /* GQRecorder.m */; };
 		34881DA81CAE3ADC008D610C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34881DA71CAE3ADC008D610C /* main.m */; };
@@ -51,6 +54,12 @@
 		19F0D49F1CB743AD00877C4E /* GQTouchDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQTouchDetector.m; sourceTree = "<group>"; };
 		19F0D4A21CB7A13E00877C4E /* GQAudioTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQAudioTool.h; sourceTree = "<group>"; };
 		19F0D4A31CB7A13E00877C4E /* GQAudioTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQAudioTool.m; sourceTree = "<group>"; };
+		19F6C8891CBB8D0E00EF546C /* GQPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQPlayer.h; sourceTree = "<group>"; };
+		19F6C88A1CBB8D0E00EF546C /* GQPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQPlayer.m; sourceTree = "<group>"; };
+		19F6C88C1CBB8EE300EF546C /* GQVideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQVideoPlayerView.h; sourceTree = "<group>"; };
+		19F6C88D1CBB8EE300EF546C /* GQVideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQVideoPlayerView.m; sourceTree = "<group>"; };
+		19F6C88F1CBB917500EF546C /* GQVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQVideoPlayerViewController.h; sourceTree = "<group>"; };
+		19F6C8901CBB917500EF546C /* GQVideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQVideoPlayerViewController.m; sourceTree = "<group>"; };
 		3458FBF31CB3A24A002BA727 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3458FBF41CB3A24A002BA727 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3458FBF61CB3A24A002BA727 /* GQRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQRecorder.h; sourceTree = "<group>"; };
@@ -151,6 +160,10 @@
 				194324E21CB6534B00C7C941 /* GQCamera.h */,
 				194324E31CB6534B00C7C941 /* GQCamera.m */,
 				34F8F52B1CB3B960001E1BB5 /* GQRecorder_internal.h */,
+				19F6C8891CBB8D0E00EF546C /* GQPlayer.h */,
+				19F6C88A1CBB8D0E00EF546C /* GQPlayer.m */,
+				19F6C88C1CBB8EE300EF546C /* GQVideoPlayerView.h */,
+				19F6C88D1CBB8EE300EF546C /* GQVideoPlayerView.m */,
 			);
 			path = Recorder;
 			sourceTree = "<group>";
@@ -182,6 +195,8 @@
 				34881DAF1CAE3ADC008D610C /* Main.storyboard */,
 				34881DD91CAE4A64008D610C /* GQViewController.h */,
 				34881DDA1CAE4A64008D610C /* GQViewController.m */,
+				19F6C88F1CBB917500EF546C /* GQVideoPlayerViewController.h */,
+				19F6C8901CBB917500EF546C /* GQVideoPlayerViewController.m */,
 				34881DB21CAE3ADC008D610C /* Assets.xcassets */,
 				34881DB41CAE3ADC008D610C /* LaunchScreen.storyboard */,
 				34881DB71CAE3ADC008D610C /* Info.plist */,
@@ -363,15 +378,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				34F8F52A1CB3B8F7001E1BB5 /* GQDataEncoder.m in Sources */,
+				19F6C8911CBB917500EF546C /* GQVideoPlayerViewController.m in Sources */,
 				34881DDB1CAE4A64008D610C /* GQViewController.m in Sources */,
 				34F8F5241CB3B8D6001E1BB5 /* GQVideoEncoder.m in Sources */,
 				3458FBF91CB3A24A002BA727 /* GQRecorder.m in Sources */,
 				34881DA81CAE3ADC008D610C /* main.m in Sources */,
 				19F0D4A01CB743AD00877C4E /* GQTouchDetector.m in Sources */,
+				19F6C88B1CBB8D0E00EF546C /* GQPlayer.m in Sources */,
 				191D2D891CBB83DE003405F0 /* NSArray+GQAdditions.m in Sources */,
 				19F0D4A41CB7A13E00877C4E /* GQAudioTool.m in Sources */,
 				3458FBF81CB3A24A002BA727 /* AppDelegate.m in Sources */,
 				194324E41CB6534B00C7C941 /* GQCamera.m in Sources */,
+				19F6C88E1CBB8EE300EF546C /* GQVideoPlayerView.m in Sources */,
 				34F8F5271CB3B8E6001E1BB5 /* GQAudioEncoder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

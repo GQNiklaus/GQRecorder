@@ -142,7 +142,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9jD-bl-U8g" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="299" y="73"/>
+            <point key="canvasLocation" x="-175" y="94"/>
+        </scene>
+        <!--Video Player View Controller-->
+        <scene sceneID="Aja-XZ-E2e">
+            <objects>
+                <viewController id="Qr9-C9-Ucz" customClass="GQVideoPlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iWU-gy-FSr"/>
+                        <viewControllerLayoutGuide type="bottom" id="h3R-y2-9Mc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oeb-EM-vNv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c23-U1-XH7" customClass="GQVideoPlayerView">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c23-U1-XH7" firstAttribute="leading" secondItem="Oeb-EM-vNv" secondAttribute="leading" id="16V-QD-Zve"/>
+                            <constraint firstAttribute="trailing" secondItem="c23-U1-XH7" secondAttribute="trailing" id="5ld-Um-qxt"/>
+                            <constraint firstItem="h3R-y2-9Mc" firstAttribute="top" secondItem="c23-U1-XH7" secondAttribute="bottom" id="GST-bL-DVn"/>
+                            <constraint firstItem="c23-U1-XH7" firstAttribute="top" secondItem="iWU-gy-FSr" secondAttribute="bottom" id="XCk-4v-Qta"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="videoPlayerView" destination="c23-U1-XH7" id="4ur-2T-Tdu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yUa-jo-foT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="475" y="94"/>
         </scene>
     </scenes>
 </document>

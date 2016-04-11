@@ -54,6 +54,9 @@
         self.lastFrameTimeBeforePause = CMTimeMake(0, 1);
         self.dispatchDelegateMessagesOnMainQueue = YES;
         
+        self.enableSound = YES;
+        self.enableVideo = YES;
+        
     }
     return self;
 }
