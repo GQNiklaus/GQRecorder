@@ -37,8 +37,10 @@
 
 #pragma mark - initialise
 - (void)setupRecorder {
+    
     _camera = [[GQCamera alloc] initWithSessionPreset:AVCaptureSessionPreset1280x720];
     _camera.delegate = self;
+    // 是否加入音频
     _camera.enableSound = NO;
     self.camera.previewVideoGravity = AVLayerVideoGravityResizeAspectFill;
     self.camera.previewView = self.previewView;

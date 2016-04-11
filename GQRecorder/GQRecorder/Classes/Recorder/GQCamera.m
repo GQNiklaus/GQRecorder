@@ -57,12 +57,12 @@
             AVCaptureSession * captureSession = [[AVCaptureSession alloc] init];
             captureSession.sessionPreset = self.sessionPreset;
             
+            // 添加输入
             NSError * audioError;
             [self addInputToSession:captureSession withMediaType:AVMediaTypeAudio error:&audioError];
             if (!self.enableSound) {
                 audioError = nil;
             }
-            
             
             NSError * videoError;
             [self addInputToSession:captureSession withMediaType:AVMediaTypeVideo error:&videoError];
@@ -70,9 +70,11 @@
                 videoError = nil;
             }
             
+            // 添加输出
             [captureSession addOutput:self.audioOutput];
             [captureSession addOutput:self.videoOutput];
             
+            // 获取预览层
             self.previewLayer = [[AVCaptureVideoPreviewLayer alloc] initWithSession:captureSession];
             self.previewLayer.videoGravity = self.previewVideoGravity;
             

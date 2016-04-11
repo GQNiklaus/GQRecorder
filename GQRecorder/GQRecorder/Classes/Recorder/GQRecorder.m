@@ -18,8 +18,10 @@
     BOOL _videoEncoderReady;
 }
 
+// 数据输出
 @property (strong, nonatomic) AVCaptureVideoDataOutput *videoOutput;
 @property (strong, nonatomic) AVCaptureAudioDataOutput *audioOutput;
+
 @property (strong, nonatomic) GQVideoEncoder *videoEncoder;
 @property (strong, nonatomic) GQAudioEncoder *audioEncoder;
 @property (strong, nonatomic) NSURL *outputFileUrl;
@@ -33,10 +35,13 @@
 
 - (instancetype)init {
     if (self = [super init]) {
+        // 创建一个串行队列
         self.dispatch_queue = dispatch_queue_create("GQVideoRecorder", NULL);
         self.outputFileType = AVFileTypeMPEG4;
+        
         _audioEncoderReady = NO;
         _videoEncoderReady = NO;
+        
         self.audioEncoder = [[GQAudioEncoder alloc] initWithRecorder:self];
         self.videoEncoder = [[GQVideoEncoder alloc] initWithRecorder:self];
         self.audioEncoder.delegate = self;
@@ -85,9 +90,10 @@
 
 - (NSURL *)prepareRecordingOnTempDir:(NSError **)error {
     long timeInterval =  (long)[[NSDate date] timeIntervalSince1970];
-    NSURL * fileUrl = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@%ld%@", NSTemporaryDirectory(), timeInterval, @"SCVideo.MOV"]];
     
-    NSError * recordError = nil;
+    NSURL *fileUrl = [NSURL fileURLWithPath:[NSString stringWithFormat:@"%@%ld%@", NSTemporaryDirectory(), timeInterval, @"GQVideo.MOV"]];
+    
+    NSError *recordError = nil;
     [self prepareRecordingAtUrl:fileUrl error:&recordError];
     
     if (recordError != nil) {
@@ -118,7 +124,7 @@
         
         NSError * assetError;
         
-        AVAssetWriter * writer = [[AVAssetWriter alloc] initWithURL:fileUrl fileType:self.outputFileType error:&assetError];
+        AVAssetWriter *writer = [[AVAssetWriter alloc] initWithURL:fileUrl fileType:self.outputFileType error:&assetError];
         
         if (assetError == nil) {
             self.assetWriter = writer;
@@ -300,6 +306,7 @@
     
     if (writer != nil) {
         if (writer.status != AVAssetWriterStatusUnknown) {
+            // 释放writer
             [writer finishWritingWithCompletionHandler:^ {
                 if (fileUrl != nil) {
                     [self removeFile:fileUrl];

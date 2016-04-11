@@ -122,13 +122,16 @@
     if ([_recorder isPrepared] && [_recorder isRecording]) {
         
         if (!_initialized) {
+            // 初始化AVAssetWriter
             [self initialize:sampleBuffer atFrameTime:frameTime];
         }
         
+        // 设置视频写入的初始时间
         [_recorder prepareWriterAtSourceTime:frameTime fromEncoder:self];
         
         if ([self.writerInput isReadyForMoreMediaData]) {
             if (_recorder.shouldComputeOffset) {
+                // 分段录视频处理时间偏移量
                 [self computeOffset:frameTime];
             }
             

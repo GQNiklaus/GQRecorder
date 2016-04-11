@@ -12,7 +12,7 @@
 @implementation GQAudioTool
 + (void) overrideCategoryMixWithOthers {
     UInt32 doSetProperty = 1;
-#if __IPHONE_OS_VERSION_MAX_ALLOWED <= __IPHONE_6_0
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_7_0
     AudioSessionSetProperty(kAudioSessionProperty_OverrideCategoryMixWithOthers, sizeof(doSetProperty), &doSetProperty);
 #endif
 }
