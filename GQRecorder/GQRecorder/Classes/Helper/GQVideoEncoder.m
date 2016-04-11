@@ -14,7 +14,8 @@
 - (instancetype)initWithRecorder:(GQRecorder *)recorder {
     if (self = [super initWithRecorder:recorder]) {
         self.outputAffineTransform = CGAffineTransformMakeRotation(M_PI * 0.5);
-        self.outputBitsPerPixel = 1000;
+        // Extra quality!
+        self.outputBitsPerPixel = 12;
     }
     return self;
 }

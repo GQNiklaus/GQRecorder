@@ -67,6 +67,10 @@
     self.assetWriter = nil;
 }
 
+- (void)pleaseDontReleaseObject:(id)object {
+    
+}
+
 //
 // Video Recorder methods
 //
@@ -138,10 +142,10 @@
     }
 }
 
-- (NSURL *)finalizeAudioMixForUrl:(NSURL*)fileUrl  withCompletionBlock:(void(^)())completionBlock {
+- (void)finalizeAudioMixForUrl:(NSURL*)fileUrl  withCompletionBlock:(void(^)())completionBlock {
     if (self.playbackAsset != nil) {
         // Move the file to a tmp one
-        NSURL * oldUrl = [[fileUrl URLByDeletingPathExtension] URLByAppendingPathExtension:@"old.mp4"];
+        NSURL * oldUrl = [[fileUrl URLByDeletingPathExtension] URLByAppendingPathExtension:@"old.mov"];
         [[NSFileManager defaultManager] moveItemAtURL:fileUrl toURL:oldUrl error:nil];
         
         AVMutableComposition * composition = [[AVMutableComposition alloc] init];
@@ -173,6 +177,7 @@
         exportSession.outputURL = fileUrl;
         
         [exportSession exportAsynchronouslyWithCompletionHandler:^ {
+            [self pleaseDontReleaseObject:exportSession];
             [self removeFile:oldUrl];
             NSLog(@"Status: %ld", exportSession.status);
             NSLog(@"Error: %@", exportSession.error);
@@ -181,7 +186,6 @@
     } else {
         completionBlock();
     }
-    return fileUrl;
 }
 
 
@@ -191,10 +195,15 @@
     [self.audioEncoder reset];
     [self.videoEncoder reset];
     
-    fileUrl = [self finalizeAudioMixForUrl:fileUrl withCompletionBlock:^{
+    [self finalizeAudioMixForUrl:fileUrl withCompletionBlock:^{
         if (_shouldWriteToCameraRoll) {
+            NSLog(@"Writing to saved photo album: %@", fileUrl);
             ALAssetsLibrary * library = [[ALAssetsLibrary alloc] init];
             [library writeVideoAtPathToSavedPhotosAlbum:fileUrl completionBlock:^(NSURL *assetUrl, NSError * error) {
+                
+                if (error != nil) {
+                    NSLog(@"Error: %@", error);
+                }
                 [self removeFile:fileUrl];
                 
                 [self dispatchBlockOnAskedQueue:^ {
